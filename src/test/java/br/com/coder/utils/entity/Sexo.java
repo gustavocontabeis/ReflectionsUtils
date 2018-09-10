@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.coder.utils;
+package br.com.coder.utils.entity;
 
 /**
  * @author Gustavo Silva <gustavo.dasilva@castgroup.com.br>

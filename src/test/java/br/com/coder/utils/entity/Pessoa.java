@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.coder.utils;
+package br.com.coder.utils.entity;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -18,9 +18,16 @@ public class Pessoa implements Serializable {
 	private String nome;
 	private Date nascimento;
 	private Sexo sexo;
+	private Pessoa pai;
 	
+	public String getNome() {
+		return this.nome;
+	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	public Date getNascimento() {
+		return this.nascimento;
 	}
 	public void setNascimento(Date nascimento) {
 		this.nascimento = nascimento;
@@ -39,5 +46,13 @@ public class Pessoa implements Serializable {
 	public void setId(Long id) {
 		this.id = id;
 	}
+	public void setPai(Pessoa pai) {
+		this.pai = pai;
+	}
+	public Pessoa getPai() {
+		return this.pai;
+	}
+
+
 
 }
